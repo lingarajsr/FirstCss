@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Types Example</title>
+
+    <!-- Internal CSS -->
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: blue;
+        }
+
+        .box {
+            width: 200px;
+            height: 100px;
+            background-color: lightgreen;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+
+    <!-- External CSS Link -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <!-- Inline CSS -->
+    <h1 style="color: red;">This is Inline CSS</h1>
+
+    <p>This paragraph is styled using Internal CSS.</p>
+
+    <div class="box">
+        Styled with Internal CSS
+    </div>
+
+</body>
+</html>
+
+External CSS File (style.css)
+
+p {
+    color: green;
+    font-size: 18px;
+}
