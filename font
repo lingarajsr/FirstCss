@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fonts and Colors Example</title>
+    <style>
+        .text1 {
+            font-family: Arial;
+            color: blue;              /* Color Name */
+        }
+
+        .text2 {
+            font-family: "Courier New";
+            color: rgb(255, 0, 0);    /* RGB */
+        }
+
+        .text3 {
+            font-family: Georgia;
+            color: #00ff00;           /* Hexadecimal */
+        }
+
+        .text4 {
+            font-family: Verdana;
+            color: hsl(280, 100%, 50%); /* HSL */
+        }
+    </style>
+</head>
+
+<body>
+
+    <p class="text1">This is Arial font with Blue color (Name)</p>
+
+    <p class="text2">This is Courier New font with Red color (RGB)</p>
+
+    <p class="text3">This is Georgia font with Green color (HEX)</p>
+
+    <p class="text4">This is Verdana font with Purple color (HSL)</p>
+
+</body>
+</html>
