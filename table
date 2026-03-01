@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Position Task</title>
+
+<style>
+
+/* Reset */
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* ================= HEADER ================= */
+header {
+  position: sticky;
+  top: 0;
+  background: darkblue;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  z-index: 1000;
+}
+
+/* ================= SIDEBAR ================= */
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 60px;
+  width: 200px;
+  height: 100%;
+  background: lightgray;
+  padding: 10px;
+}
+
+/* ================= CONTENT ================= */
+.content {
+  margin-left: 220px;
+  padding: 20px;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* ================= TABLE ================= */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background: gray;
+  color: white;
+}
+
+tr:hover {
+  background: lightblue;
+}
+
+/* ================= RELATIVE & ABSOLUTE ================= */
+.box-parent {
+  position: relative;
+  background: #eee;
+  height: 150px;
+  margin-top: 20px;
+}
+
+.box-child {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: red;
+  color: white;
+  padding: 10px;
+}
+
+/* ================= MODAL ================= */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border: 2px solid black;
+  z-index: 2000;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  Sticky Header
+</header>
+
+<div class="sidebar">
+  <h3>Sidebar</h3>
+  <p>Menu 1</p>
+  <p>Menu 2</p>
+</div>
+
+<div class="content">
+
+  <h2>Styled Table</h2>
+
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>City</th>
+    </tr>
+    <tr>
+      <td>Ravi</td>
+      <td>22</td>
+      <td>Bangalore</td>
+    </tr>
+    <tr>
+      <td>Sita</td>
+      <td>21</td>
+      <td>Mysore</td>
+    </tr>
+  </table>
+
+  <div class="box-parent">
+    Parent (relative)
+    <div class="box-child">
+      Absolute Box
+    </div>
+  </div>
+
+</div>
+
+<div class="modal">
+  Centered Popup Modal
+</div>
+
+<footer>
+  Sticky Footer
+</footer>
+
+</body>
+</html>
