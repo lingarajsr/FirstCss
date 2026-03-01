@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Box Model Example</title>
+
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial;
+        }
+
+        .container {
+            width: 300px;
+            margin: 50px auto;        /* Outer space */
+            padding: 20px;            /* Inner space */
+            border: 5px solid black;  /* Border */
+            background-color: white;  /* Background */
+        }
+
+        h2 {
+            margin-bottom: 15px;
+        }
+
+        p {
+            padding: 10px;
+            border: 2px solid blue;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Box Model Layout</h2>
+        <p>This box shows content, padding, border, and margin.</p>
+    </div>
+
+</body>
+</html>
