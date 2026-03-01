@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Margin and Padding Example</title>
+
+    <style>
+        div {
+            background-color: lightgray;
+
+            /* Margin for all sides */
+            margin: 40px;
+
+            /* Padding for all sides */
+            padding: 20px;
+
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        This div has margin and padding applied on all sides.
+    </div>
+
+</body>
+</html>
